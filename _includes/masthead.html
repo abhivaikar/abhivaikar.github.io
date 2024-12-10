@@ -51,4 +51,43 @@
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
   </div>
+  <!-- Navigation Menu - Modified for horizontal layout -->
+<div class="f4 mb-6">
+  <nav class="navigation-menu d-flex flex-wrap">
+    <div class="mr-3 mb-2">
+      {% octicon book height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:About %}
+      <a href="#aboutme" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">About Me</a>
+    </div>
+    
+    <div class="mr-3 mb-2">
+      {% octicon tools height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Skills %}
+      <a href="#skills" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Skills</a>
+    </div>
+    
+    <div class="mr-3 mb-2">
+      {% octicon project height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Projects %}
+      <a href="#projects" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Projects</a>
+    </div>
+    
+   <!--  <div class="mr-3 mb-2">
+      {% octicon people height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Community %}
+      <a href="#community" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Community</a>
+    </div> -->
+    
+<!--     <div class="mr-3 mb-2">
+      {% octicon megaphone height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Speaking %}
+      <a href="#speaking" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Speaking</a>
+    </div> -->
+    
+   <!--  <div class="mr-3 mb-2">
+      {% octicon book height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Books %}
+      <a href="#books" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Books</a>
+    </div> -->
+    
+    <div class="mb-2">
+      {% octicon file height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Resume %}
+      <a href="#resume" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Resume</a>
+    </div>
+  </nav>
+</div>
 {% endif %}

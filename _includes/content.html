@@ -1,3 +1,5 @@
+
+<!-- About Me -->
 <div id="aboutme" class="section">
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>About Me</h2>
     <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
@@ -5,10 +7,10 @@
             Hi, I'm <strong>Abhijeet Vaikar</strong>, a passionate Software Test Engineer with over a decade of experience in ensuring software quality across e-commerce and healthcare domains. Currently based in Singapore, I specialize in agile testing, test automation, and quality engineering.
           </p>
           <p>
-            I am a strong advocate for the user, combining curiosity, critical thinking, and a user-centric approach to uncover issues and ensure software delivers value. My ability to understand user perspectives and anticipate their needs has been pivotal in improving both product quality and user experience.
+            I am a strong advocate for the user, combining curiosity, empathy, critical thinking, and a user-centric approach to uncover issues and ensure software delivers value. I focus on understanding user perspectives and anticipating their needs, which has helped in enhancing product quality and user experience..
           </p>
           <p>
-            Throughout my career, I have led efforts to build scalable test automation frameworks, implemented shift-left testing practices, and fostered a culture of whole-team quality ownership. My technical expertise spans UI and API test automation, exploratory testing, and usability/UX testing for web and mobile applications.
+            Throughout my career, I have led efforts to build automated tests and test automation frameworks, implemented shift-left testing practices, and fostered a culture of whole-team quality ownership. My technical expertise spans UI and API test automation, exploratory testing, and usability/UX testing for web and mobile applications.
           </p>
           <p>
             Beyond my professional work, I actively contribute to the software testing community as a speaker, meetup organizer, and open-source curator. I co-organize the <em>Taqelah</em> quality engineering community in Singapore and maintain the popular testing knowledge hub, <a href="https://abhivaikar.github.io/howtheytest/" target="_blank" rel="noopener">How They Test</a>.
@@ -17,8 +19,9 @@
             In my free time, I enjoy pursuing photography, listening to music, going for long nature walks,reading about tech and testing innovations, networking with fellow test engineers, and continuously learning to improve the craft of software testing.
           </p>
     </p>
-  </div>
+</div>
   
+  <!-- Skills -->
   <div id="skills" class="section">
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Skills</h2>
     
@@ -99,6 +102,7 @@
     </div>
   </div>
   
+  <!-- Projects -->
   <div id="projects" class="section">
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Projects</h2>
     
@@ -164,33 +168,243 @@
     </div>
   </div>
   
-  <!-- <div id="community" class="section">
-    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Community Contributions</h2>
-    <ul class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-      <li>Conference and meetup talks</li>
-      <li>Blog posts</li>
-      
-    </ul>
-  </div>
+  <!-- Meetup and Conference Talks -->
+  <div id="meetupconf-talks" class="section">
+    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Meetup and Conference Talks</h2>
   
-  <div id="books" class="section">
-    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Books I've Read</h2>
-    <h3 {% if site.style == 'dark' %}class="text-white"{% endif %}>Testing Books</h3>
-    <div class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-      <div class="mb-3">
-        <a href="link-to-book" {% if site.style == 'dark' %}class="text-white"{% endif %}>Book Title 1</a>
-        <p>Brief review</p>
+  <div class="d-flex flex-wrap gutter-condensed mb-4">
+    <!-- Talk 1 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              {% octicon megaphone height:20 class:"mr-1" %}
+              Upgrading Mobile Tester's Weapons with Advanced Debugging
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">
+            <p class="mb-2">I presented this paper at Agile Testing Alliance's Global Testing Retreat 2017 conference. This paper describes benefits, methods, and approach for performing advanced debugging of mobile web, hybrid and native apps, as an additional check in mobile testing.</p>
+            <div class="d-flex f6 flex-wrap">
+              <a href="https://www.slideshare.net/slideshow/upgrading-mobile-testers-weapons-with-advanced-debugging/73764767" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon file height:16 class:"mr-1" %}
+                Slides
+              </a>
+              <a href="https://youtu.be/ZInEdg_aP-Q?si=PfxaxJQYAsobMsky" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon play height:16 class:"mr-1" %}
+                Watch Talk
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <a href="link-to-book" {% if site.style == 'dark' %}class="text-white"{% endif %}>Book Title 2</a>
-        <p>Brief review</p>
+
+    <!-- Talk 2 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+      <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+        <div class="d-flex flex-justify-between flex-items-start mb-1">
+          <h3 class="f4 lh-condensed mb-1">
+            {% octicon megaphone height:20 class:"mr-1" %}
+            Breaking free from static abuse in test automation frameworks and using Spring DI
+          </h3>
+        </div>
+        <div class="text-gray mb-2 ws-normal">
+          <p class="mb-2">The talk is about how we should be conscious of the static methods and objects that we freely adopt in automation scripts and how we can adopt techniques like Dependency Injection to make our scripts easy to maintain, read and write. Presented at Taqelah 2018 Meetup</p>
+          <div class="d-flex f6 flex-wrap">
+            <a href="https://www.slideshare.net/slideshow/breaking-free-from-static-abuse-in-test-automation-frameworks-and-using-spring-di/124281313" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+              {% octicon file height:16 class:"mr-1" %}
+              Slides
+            </a>
+            <a href="https://youtu.be/SQAKDzjbBSo?si=p9B2QxfBDX9p-5AJ" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+              {% octicon play height:16 class:"mr-1" %}
+              Watch Talk
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div> -->
+
+    <!-- Talk 3 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+      <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+        <div class="d-flex flex-justify-between flex-items-start mb-1">
+          <h3 class="f4 lh-condensed mb-1">
+            {% octicon megaphone height:20 class:"mr-1" %}
+            Good practices for debugging Selenium and Appium tests
+          </h3>
+        </div>
+        <div class="text-gray mb-2 ws-normal">
+          <p class="mb-2">shared about some of the good practices I have used for debugging Selenium and Appium tests. Presented at Taqelah 2019 Meetup</p>
+          <div class="d-flex f6 flex-wrap">
+            <a href="https://www.slideshare.net/slideshow/good-practices-for-debugging-selenium-and-appium-tests/251803401" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+              {% octicon file height:16 class:"mr-1" %}
+              Slides
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Talk 4 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              {% octicon megaphone height:20 class:"mr-1" %}
+              Ensuring quality of test automation framework and test scripts
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">
+            <p class="mb-2">I presented this topic to share my experience and learnings on how to ensure high quality of E2E test automation framework and test code written using them.</p>
+            <div class="d-flex f6 flex-wrap">
+              <a href="https://docs.google.com/presentation/d/1oPDE0Fnnna1OP-nAta-0U3CilniEE-4eGCcu57KqEKw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon file height:16 class:"mr-1" %}
+                Slides
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Talk 5 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              {% octicon megaphone height:20 class:"mr-1" %}
+              Unit testing (Exploring the other side as a tester)
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">
+            <p class="mb-2">I shared about fundamentals of unit testing (with a working demo) with testing community and how or why testers need to be involved in the process.</p>
+            <div class="d-flex f6 flex-wrap">
+              <a href="https://www.slideshare.net/slideshow/unit-testing-exploring-the-other-side-as-a-tester/251803600" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon file height:16 class:"mr-1" %}
+                Slides
+              </a>
+              <a href="https://youtu.be/cdiywa3wFlc?si=4sI2t2TUnqvCRO7d" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon play height:16 class:"mr-1" %}
+                Watch Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Talk 6 -->
+    <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              {% octicon megaphone height:20 class:"mr-1" %}
+              End-end tests as first class citizens - SeleniumConf 2020
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">
+            <p class="mb-2">My talk at SeleniumConf 2020 Virtual on how to treat your end-end tests and framework as first class citizens.</p>
+            <div class="d-flex f6 flex-wrap">
+              <a href="https://www.slideshare.net/slideshow/endend-tests-as-first-class-citizens-seleniumconf-2020/251803558" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon file height:16 class:"mr-1" %}
+                Slides
+              </a>
+              <a href="https://youtu.be/Iv7b4sJgzik?si=wIMlyv9JDp_dFNpk" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon play height:16 class:"mr-1" %}
+                Watch Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Talk 7 -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              {% octicon megaphone height:20 class:"mr-1" %}
+              Dogfooding culture at Carousell
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">
+            <p class="mb-2">Presented about dogfooding culture of Carousell and how that is useful to get user-centric feedback before you launch new products.</p>
+            <div class="d-flex f6 flex-wrap">
+              <a href="https://docs.google.com/presentation/d/1xR5aciVXok6lFUlafLiT7PCu7iPodT1o4tnfu5MGqbY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon file height:16 class:"mr-1" %}
+                Slides
+              </a>
+              <a href="https://youtu.be/4zxeDkef7Rw?si=P2wVmkbACmw-Cnkj" target="_blank" rel="noopener noreferrer" class="d-flex flex-items-center mr-3">
+                {% octicon play height:16 class:"mr-1" %}
+                Watch Talk
+              </a>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+
+  <!-- Blog Posts -->
+  <div id="blogposts" class="section">
+    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Blog Posts</h2>
+    <div class="d-flex flex-wrap gutter-condensed mb-4">
+      <!-- Article 1 -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/developer-experience-productivity-the-less-spoken-bottleneck-of-test-automation-2f6aecdefa77" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Developer experience & productivity: The less spoken bottleneck of test automation
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">Test automation engineers and developers face unique challenges in maintaining and scaling test automation. This article explores the developer experience aspects of test automation.</div>
+        </div>
+      </div>
   
-  <div id="resume" class="section">
-    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Resume</h2>
-    <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-      <a href="https://drive.google.com/file/d/1NA_3NG_EFk70HVhkAgEb5Qqf0H4jWBGK/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
-    </p>
+      <!-- Article 2 -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/a-pied-piper-named-ui-test-automation-8f88267846f4" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                A pied piper named "UI test automation"
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">An exploration of common pitfalls in UI test automation and how to avoid them while building sustainable test automation strategies.</div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/remote-debugging-webviews-vs-chrome-custom-tabs-on-android-49749e250a70" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Remote debugging WebViews VS Chrome Custom Tabs on Android
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">Wrote about how to remote debug WebViews and Chrome Custom Tabs on Android for testing mobile web, hybrid and native apps.</div>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/using-browser-bookmarklets-as-a-productivity-hack-for-testers-b98a80da3821" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Using browser bookmarklets as a productivity hack for testers
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">Wrote about how testers can use browser bookmarklets to improve their productivity.</div>
+        </div>
+      </div>
+
+    </div>
   </div>

@@ -376,7 +376,23 @@
   <div id="blogposts" class="section">
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Blog Posts</h2>
     <div class="d-flex flex-wrap gutter-condensed mb-4">
-      <!-- Article 1 -->
+
+     <!-- Article -->
+     <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/writing-a-dependency-caching-mechanism-for-ios-builds-on-jenkins-to-speed-up-builds-bcc38e73eba8" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Writing a dependency caching mechanism for iOS on Jenkins to speed up build time
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">Test automation engineers and developers face unique challenges in maintaining and scaling test automation. This article explores the developer experience aspects of test automation.</div>
+        </div>
+      </div>
+        
+      <!-- Article -->
       <div class="col-12 col-md-6 col-lg-6 mb-3">
         <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
           <div class="d-flex flex-justify-between flex-items-start mb-1">

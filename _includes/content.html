@@ -107,6 +107,21 @@
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Projects</h2>
     
     <div class="d-flex flex-wrap gutter-condensed mb-4">
+      <!-- DataSeed -->
+      <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h1 class="f4 lh-condensed mb-1">
+              <a href="https://abhivaikar.github.io/seed-static-site/?ref=producthunt">
+                {% octicon repo height:20 class:"mr-1" %}
+                DataSeed
+              </a>
+            </h1>
+          </div>
+          <div class="text-gray mb-2 ws-normal">A chrome extension to make it easy for anyone to quickly create sample data for testing and prototyping purposes</div>
+        </div>
+      </div>
+
       <!-- PlayPI -->
       <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
         <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
@@ -376,6 +391,36 @@
   <div id="blogposts" class="section">
     <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Blog Posts</h2>
     <div class="d-flex flex-wrap gutter-condensed mb-4">
+
+      <!-- Article: Supercharging Salesforce testing with JSForce -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/supercharging-salesforce-testing-with-jsforce-a-practical-guide-for-testers-and-sdets-dbbd27468fbb" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Supercharging Salesforce testing with JSForce: A practical guide for testers and SDETs
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">A practical guide on how testers and SDETs can leverage JSForce to supercharge their Salesforce testing workflows</div>
+        </div>
+      </div>
+
+      <!-- Article: Building an automated resource contribution workflow for HowTheyTest -->
+      <div class="col-12 col-md-6 col-lg-6 mb-3">
+        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="f4 lh-condensed mb-1">
+              <a href="https://medium.com/@abhijeetvaikar/building-an-automated-resource-contribution-workflow-for-howtheytest-874a2e92fac4" target="_blank" rel="noopener noreferrer">
+                {% octicon book height:20 class:"mr-1" %}
+                Building an automated resource contribution workflow for HowTheyTest
+              </a>
+            </h3>
+          </div>
+          <div class="text-gray mb-2 ws-normal">How I built an automated workflow to streamline resource contributions for the HowTheyTest community repository</div>
+        </div>
+      </div>
 
      <!-- Article -->
      <div class="col-12 col-md-6 col-lg-6 mb-3">

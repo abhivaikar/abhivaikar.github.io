@@ -34,6 +34,12 @@
         {{ user.location }}
       </div>
     {% endif %}
+    <div class="{{ metadata_styles }}">
+      {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
+      <a href="mailto:vaikar.abhijeet@gmail.com" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        vaikar.abhijeet@gmail.com
+      </a>
+    </div>
     {% if site.social_media %}
       <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
         {% for account in site.social_media %}
@@ -51,32 +57,47 @@
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
   </div>
-  <!-- Navigation Menu - Modified for horizontal layout -->
-<div class="f4 mb-6">
+  <!-- Navigation Menu - Compact horizontal layout -->
+<div class="f5 mb-4">
   <nav class="navigation-menu d-flex flex-wrap">
-    <div class="mr-3 mb-2">
+    <div class="mr-3 mb-1">
       {% octicon book height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:About %}
       <a href="#aboutme" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">About Me</a>
     </div>
-    
-    <div class="mr-3 mb-2">
+
+    <div class="mr-3 mb-1">
       {% octicon tools height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Skills %}
       <a href="#skills" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Skills</a>
     </div>
-    
-    <div class="mr-3 mb-2">
+
+    <div class="mr-3 mb-1">
       {% octicon project height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Projects %}
       <a href="#projects" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Projects</a>
     </div>
-    
-   <div class="mr-3 mb-2">
+
+    <div class="mr-3 mb-1">
       {% octicon megaphone height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Speaking %}
-      <a href="#meetupconf-talks" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Meetup & Conf Talks</a>
+      <a href="#meetupconf-talks" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Talks</a>
     </div>
-    
-    <div class="mb-2">
+
+    <div class="mr-3 mb-1">
       {% octicon book height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Blog Posts %}
-      <a href="#blogposts" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Blog Posts</a>
+      <a href="#blogposts" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Blog</a>
+    </div>
+
+    <div class="mr-3 mb-1">
+      {% octicon people height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Community %}
+      <a href="#community" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Community</a>
+    </div>
+
+    <div class="mr-3 mb-1">
+      {% octicon comment-discussion height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Testimonials %}
+      <a href="#testimonials" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Testimonials</a>
+    </div>
+
+    <div class="mb-1">
+      {% octicon file height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:Resume %}
+      <a href="#resume" class="navigation-link {% if site.style == 'dark' %}text-white{% endif %}">Resume</a>
     </div>
   </nav>
 </div>

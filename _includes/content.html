@@ -122,7 +122,7 @@
         <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
           <div class="d-flex flex-justify-between flex-items-start mb-1">
             <h1 class="f4 lh-condensed mb-1">
-              <a href="https://github.com/abhivaikar/PlayPI">
+              <a href="https://abhivaikar.github.io/PlayPI/#/">
                 {% octicon repo height:20 class:"mr-1" %}
                 PlayPI
               </a>
@@ -137,7 +137,7 @@
         <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
           <div class="d-flex flex-justify-between flex-items-start mb-1">
             <h1 class="f4 lh-condensed mb-1">
-              <a href="https://github.com/abhivaikar/howtheytest">
+              <a href="https://abhivaikar.github.io/howtheytest/">
                 {% octicon repo height:20 class:"mr-1" %}
                 HowTheyTest
               </a>
@@ -182,7 +182,7 @@
         <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
           <div class="d-flex flex-justify-between flex-items-start mb-1">
             <h1 class="f4 lh-condensed mb-1">
-              <a href="https://github.com/abhivaikar/bookmarklets-for-testers">
+              <a href="https://abhivaikar.github.io/bookmarklets-for-testers/">
                 {% octicon repo height:20 class:"mr-1" %}
                 Bookmarklets for Testers
               </a>
@@ -581,6 +581,41 @@
         {% endfor %}
       </div>
     {% endif %}
+  </div>
+
+  <!-- Visual Resume -->
+  <div id="visual-resume" class="section">
+    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Visual Resume</h2>
+    <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+      An interactive visual map of my professional journey, skills, and community contributions. Click to zoom in for details.
+    </p>
+    <div class="visual-resume-container {% if site.style == 'dark' %}border border-gray-light{% else %}border border-gray-light{% endif %} rounded-1 p-3 bg-white">
+      <div class="d-flex flex-justify-between flex-items-center mb-3">
+        <p class="text-gray mb-0 f6">Click on the diagram to view in fullscreen with zoom controls.</p>
+        <a href="/assets/images/visual-resume/AbhijeetVaikar-VisualResume.svg" download class="btn btn-sm">
+          {% octicon download height:16 class:"mr-1" %}
+          Download SVG
+        </a>
+      </div>
+      <div class="visual-resume-image-wrapper" style="overflow-x: auto; cursor: zoom-in;">
+        <img
+          src="/assets/images/visual-resume/AbhijeetVaikar-VisualResume.svg"
+          alt="Visual resume showing Abhijeet Vaikar's professional experience in testing and automation, industry domains including healthcare and eCommerce, companies worked at, community involvement with Taqelah, projects like HowTheyTest, PlayPI, and DataSeed, tech blogging, and conference speaking engagements"
+          class="visual-resume-svg"
+          onclick="openVisualResumeModal()"
+          style="max-width: 100%; height: auto; display: block;"
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Visual Resume -->
+  <div id="visualResumeModal" class="visual-resume-modal" onclick="closeVisualResumeModal()">
+    <span class="visual-resume-modal-close">&times;</span>
+    <img class="visual-resume-modal-content" id="visualResumeModalImg" alt="Visual resume fullscreen view">
+    <div class="visual-resume-modal-caption">
+      <p>Use pinch-to-zoom or mouse wheel to zoom. Click outside or press ESC to close.</p>
+    </div>
   </div>
 
   <!-- Resume -->
